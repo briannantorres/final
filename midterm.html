@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midterm</title>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ html, body{
+    max-width: 100%;
+    border: 3px dotted white;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    background-image: url("./images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div.left, div.middle, div.right{
+    border: 1px dotted black;
+    width: 33.3%;
+    float: left;
+  }
+  aside img{
+    width: 100%
+  }
+  aside{
+  display: flex;
+  justify-content: space-between;
+}
+#mainContent{
+  width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+  height: 100%;
+  display: block;
+}
+.section{
+  width: 400px;
+  float: left;
+  margin-right: 40px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+  header{
+      opacity: 100%;
+      text-align: center;
+      overflow: hidden;
+      h1{
+        color: white;
+      }
+      h2{
+        color: white;
+      }
+  }
+  nav{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    position: center;
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    li{
+      a{
+        color: white;
+      }
+    } 
+  }
+  main{
+    color: white;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+  }
+  li{
+    display: block;
+    border: 2px dotted white;
+    line-height: 3em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+  }
+ li:hover{
+    background-color: rgb(34, 0, 255);
+  }
+  .body{
+    overflow: hidden
+  }
+  .slideshow{
+    width: 200%;
+    float: left;
+  }
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  header h1{
+    margin-top: 0;
+  }
+  li{
+    margin: 0;
+    padding: 0;
+    border-radius: 5em;
+  }
+  @media screen and (min-width:800px){
+   header h1{
+    padding: .35em;
+    width: 100%;
+    text-align: center;
+   }
+    nav{
+      width: 80%;
+      margin: 0 auto;
+      padding: 15px;
+      float: right;
+      font-size: 1.3em;
+      box-sizing: border-box;
+    }
+    nav{
+      overflow: hidden;
+    }
+    nav{
+      width: 20%;
+      margin: 0;
+      padding: 0;
+      float: left;
+      box-sizing: border-box;
+    
+    }
+    nav ul{
+      margin: 0;
+      padding: .1em;
+    }
+    nav li{
+      border-radius: 5em;
+      list-style-type: none;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .main, .text{
+      width: 30%;
+      float: left;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+    .text{
+      overflow: hidden;
+    }
+    .content{
+      overflow: hidden;
+    }
+    .slideshow{
+      float: left;
+
+    }
+    header{
+        padding: .35em;
+        width: 100%;
+        overflow: hidden;
+      }
+      header h1{
+        display: inline;
+      }
+      nav{
+        float: right
+      }
+      nav ul{
+        margin: 0;
+        display: inline;
+        padding-right: .15em
+      }
+      nav ul li{
+        display: inline-block;
+        list-style-type: none;
+        padding: .36em 1em;
+      }
+      nav ul li a{
+        text-decoration: none;
+        padding: .5em;
+        display: block;
+        line-height: 2em;
+      }
+    }
+    @media screen and (min-width:800px)(max-width:799){
+      .header, .h2, .nav ul{
+        display: flex;
+        float: left;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+      .header{
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+  }
+  @media screen and (min-width: 481px) and (max-width: 799px){
+    header h1{
+      padding: .6em;
+      text-align: center;
+    }
+    nav ul{
+      margin: 0;
+      padding: 0;
+    }
+    nav li{
+      display: inline;
+      padding: .5em;
+    }
+    nav a{
+      display: inline-block;
+      padding: 1em;
+      text-decoration: none;
+      border-radius: 5em;
+    }
+  }
+      
+  .slideshow{
+    margin-top: 30px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+    .slideshow a{
+      flex-basis: auto;
+  }
+  .cycle-slideshow img{
+    max-width: 280px;
+  }
+  .cycle-slideshow img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10em;
+    display: center;
+    float: center;
+  }
+  a{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+  <div class="wrapper">
+    <header>
+      <h1>☆Art Portfolio☆</h1>
+      <h2>Brianna's Final</h2>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Art</a>
+        </li>
+        <li>
+          <a href="#">Design</a>
+        </li>
+        <li>
+          <a href="#">Animation</a>
+        </li>
+        <li>
+          <a href="#">Music</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+      <div class="slideshow">
+       <div class="cycle-slideshow">
+        <img src="images/image.jpeg" alt="iced green text-align">
+        <img src="images/IMG_1512.jpeg" alt="iced coffee">
+        <img src="images/IMG_1516.jpeg" alt="iced beverage">
+       </div>
+      </div>
+<div class="center">
+</div>
+    </main>
+    <footer>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+</div>
+</body>
+</html>
